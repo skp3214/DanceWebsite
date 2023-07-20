@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sachin Dance Academy
+        style
+             include ../static/style.css
+    body
+        nav#navbar.top 
+            ul
+                 div#logo 
+                     img(src="/static/logo.png", alt="", style="filter:invert()")
+                     | SDA
+                 li #[a(href=("/")) Home]
+                 li #[a(href=("/")) About]
+                 li #[a(href=("/")) Services]
+                 li #[a(href=("/")) Class Info]
+                 li #[a(href=("contact.pug")) Contact Us]
+
+        section#introSection
+            div Welcome to Our 
+            div Dance Academy
+            div.small Eat Dance 
+            div.small Sleep Repeat
+
+        section#missionSection 
+            h2 Our Mission
+            div.card 
+                 h3 Dance Perfection 
+                 div.cardbox
+                    div.card-img 
+                        img(src="/static/1.png", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe.
+
+            div.card 
+                 h3 Dance Perfection 
+                 div.cardbox
+                    div.card-img 
+                        img(src="/static/2.png", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe.
+            div.card 
+                 h3 Dance Perfection 
+                 div.cardbox
+                    div.card-img 
+                        img(src="/static/3.png", alt="")
+                    div.card-content 
+                        p This is the best dance academy of the universe.
+
+                 
+
+        section#sponsorSection 
+            h2 Our Sponsors
+            div#sponsors 
+                img(src="/static/logo1.png", alt="", class="spImage")
+                img(src="/static/logo2.png", alt="", class="spImage")
+                img(src="/static/logo3.png", alt="", class="spImage")
+                img(src="/static/logo4.png", alt="", class="spImage")
+        footer#footer 
+            | Copyright © 2023 SachinDanceAcademy.com | All Rights Reserved
+
+        script 
+             include ../static/script.js
+        
